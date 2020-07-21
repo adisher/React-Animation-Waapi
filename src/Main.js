@@ -26,7 +26,9 @@ export default function Demo() {
 
     return (
         <>
-            <audio src={sound} autoPlay loop />
+            <audio autoplay="true" preload="auto" loop>
+                <source src={sound}/>
+            </audio>
 
             <div style={{overflow: "hidden"}}>
                 <div style={{
